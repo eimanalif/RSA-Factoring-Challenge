@@ -6,8 +6,6 @@ import time
 
 
 def is_prime(num, k=20):
-    '''
-    '''
     if num == 2 or num == 3:
         return True
 
@@ -66,7 +64,6 @@ if __name__ == "__main__":
         if num % i == 0 and is_prime(i) and is_prime(num//i):
             print(f"{num}={i}*{num//i}")
             break
-
 
 
         if time.time() - start_time > 5:
